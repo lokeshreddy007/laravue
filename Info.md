@@ -42,3 +42,9 @@ php artisan migrate
 php artisan make:seeder CategoriesTableSeeder
 php artisandb:seed
 ```
+
+#### Policy
+
+```php
+php artisan make:policy CategoryPolicy --model=Category
+```
