@@ -13,13 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+
 
 // to send a verification link after signup
 Auth::routes(['verify' => true]);
 
 
 // middileware protect's until user verify's 
-Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/categories', 'CategoryController@index');
