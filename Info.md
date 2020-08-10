@@ -27,3 +27,18 @@ if(mix.inProduction()) {
 
 mix.browserSync('http://localhost:8000/');
 ```
+
+#### Make Model
+
+```phph
+php artisan make:model Category -mr
+php artisan migrate
+```
+
+
+#### Make Seeder
+
+```php
+php artisan make:seeder CategoriesTableSeeder
+php artisandb:seed
+```
