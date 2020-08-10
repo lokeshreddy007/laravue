@@ -9,3 +9,11 @@ php artisan ui vue --auth
 ```php
 php artisan migrate      
 ```
+
+##### Email Log
+
+```php
+// if error 
+php artisan config:cache // log storage /log
+// restart server
+```

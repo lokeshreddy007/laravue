@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+// to send a verification link after signup
+Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+// middileware protect's until user verify's 
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
