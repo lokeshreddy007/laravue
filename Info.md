@@ -17,3 +17,13 @@ php artisan migrate
 php artisan config:cache // log storage /log
 // restart server
 ```
+
+#### Syn
+
+```javascript
+if(mix.inProduction()) {
+	mix.version();
+}
+
+mix.browserSync('http://localhost:8000/');
+```
